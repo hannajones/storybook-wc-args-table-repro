@@ -26,6 +26,9 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "analyze": "cem analyze"
-  }
+    "analyze": "cem analyze",
+    "chromatic": "npx chromatic --project-token=50a8d7a6f9b5"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "web_components_lit2@1.0.0"
 }

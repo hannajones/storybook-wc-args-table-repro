@@ -81,7 +81,7 @@ export const demoWcCardStyle = css`
 
   #front {
     background: linear-gradient(141deg, #aaa 25%, #eee 40%, #ddd 55%);
-    color: var(--demo-wc-card-front-color, #000);
+    color: var(--demo-wc-card-front-color, #3C3C3C);
   }
 
   #back {
