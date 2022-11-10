@@ -19,6 +19,7 @@
     "@storybook/manager-webpack4": "^6.5.13",
     "@storybook/web-components": "^6.5.13",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.11.4",
     "lit-html": "^2.4.0",
     "typescript": "latest"
   },
