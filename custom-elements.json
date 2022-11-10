@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "stories/demo-wc-card/DemoWcCard.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "This is a container looking like a card with a back and front side you can switch",
+          "name": "DemoWcCard",
+          "cssProperties": [
+            {
+              "description": "Header font size",
+              "name": "--demo-wc-card-header-font-size"
+            },
+            {
+              "description": "Font color for front",
+              "name": "--demo-wc-card-front-color"
+            },
+            {
+              "description": "Font color for back",
+              "name": "--demo-wc-card-back-color"
+            }
+          ],
+          "cssParts": [
+            {
+              "description": "Front of the card",
+              "name": "front"
+            },
+            {
+              "description": "Back of the card",
+              "name": "back"
+            },
+            {
+              "description": "csspart header that overrides the header property and attribute",
+              "name": "header"
+            }
+          ],
+          "slots": [
+            {
+              "description": "This is an unnamed slot (the default slot)",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "method",
+              "name": "toggle"
+            },
+            {
+              "kind": "field",
+              "name": "backSide",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Indicates that the back of the card is shown",
+              "default": "false",
+              "attribute": "back-side",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "header",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "description": "Header message",
+              "default": "'Your Message'",
+              "attribute": "header"
+            },
+            {
+              "kind": "field",
+              "name": "rows",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "description": "Data rows",
+              "default": "[]",
+              "attribute": "rows"
+            }
+          ],
+          "events": [
+            {
+              "name": "side-changed",
+              "type": {
+                "text": "CustomEvent"
+              },
+              "description": "Fires whenever it switches between front/back"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "back-side",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Indicates that the back of the card is shown",
+              "default": "false",
+              "fieldName": "backSide"
+            },
+            {
+              "name": "header",
+              "type": {
+                "text": "string"
+              },
+              "description": "Header message",
+              "default": "'Your Message'",
+              "fieldName": "header"
+            },
+            {
+              "name": "rows",
+              "type": {
+                "text": "array"
+              },
+              "description": "Data rows",
+              "default": "[]",
+              "fieldName": "rows"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "demo-wc-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "DemoWcCard",
+          "declaration": {
+            "name": "DemoWcCard",
+            "module": "stories/demo-wc-card/DemoWcCard.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/demo-wc-card/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "demo-wc-card",
+          "declaration": {
+            "name": "DemoWcCard",
+            "module": "/stories/demo-wc-card/DemoWcCard.js"
+          }
+        }
+      ]
+    }
+  ]
+}
